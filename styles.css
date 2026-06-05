@@ -1,0 +1,215 @@
+/* Golfer's Pair-A-Dice static launch site */
+:root {
+  --bg: #f7f4eb;
+  --panel: #fffaf0;
+  --ink: #192219;
+  --muted: #536153;
+  --line: #d8cfbd;
+  --accent: #216b3a;
+  --accent-dark: #174f2a;
+  --gold: #d7a332;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(215, 163, 50, 0.16), transparent 34rem),
+    linear-gradient(180deg, #fbf8ef 0%, var(--bg) 100%);
+}
+
+a { color: var(--accent-dark); }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.92);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 800;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover { color: var(--accent-dark); }
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+  max-width: 760px;
+}
+
+.eyebrow {
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4.8rem);
+  line-height: 0.95;
+  margin: 0.45rem 0 1rem;
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.lede {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card, .content-panel {
+  background: rgba(255, 250, 240, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 32px rgba(25, 34, 25, 0.06);
+}
+
+.card h3 { margin-top: 0; }
+
+.actions {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--accent-dark);
+  border: 1px solid var(--accent);
+}
+
+.notice {
+  border-left: 5px solid var(--gold);
+  padding: 1rem 1.1rem;
+  background: rgba(215, 163, 50, 0.11);
+  border-radius: 14px;
+  margin: 2rem 0;
+}
+
+.content-panel h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.content-panel p, .content-panel li {
+  color: #263226;
+}
+
+code {
+  background: rgba(25, 34, 25, 0.08);
+  padding: 0.1rem 0.25rem;
+  border-radius: 6px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 1.25rem;
+  color: var(--muted);
+  background: rgba(255, 250, 240, 0.75);
+}
+
+.footer-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+}
