@@ -72,10 +72,91 @@ main {
   padding: 2rem 1.25rem 4rem;
 }
 
-main.home {
+main.home,
+main.page {
   max-width: 42rem;
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
+}
+
+.page-header {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 0.65rem;
+  letter-spacing: -0.03em;
+}
+
+.page-subtitle,
+.page-intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.doc-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.doc-meta li {
+  margin-bottom: 0.45rem;
+}
+
+.doc-meta .label {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.doc-meta .label::after {
+  content: ":";
+  margin-right: 0.35rem;
+}
+
+.doc-body h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 2.25rem 0 0.65rem;
+  letter-spacing: -0.01em;
+}
+
+.doc-body p,
+.doc-body li {
+  color: #263226;
+}
+
+.page-section {
+  padding-bottom: 2rem;
+}
+
+.page-section + .page-section {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+
+.page-section h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.page-section p,
+.page-section li {
+  color: #263226;
+}
+
+.page-section .page-links {
+  margin-top: 1.25rem;
 }
 
 .hero {
@@ -180,14 +261,7 @@ h3 {
   margin: 0 0.55rem;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.card, .content-panel {
+.content-panel {
   background: rgba(255, 250, 240, 0.88);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -195,96 +269,25 @@ h3 {
   box-shadow: 0 12px 32px rgba(25, 34, 25, 0.06);
 }
 
-.content-panel + .content-panel {
-  margin-top: 1.25rem;
-}
-
-.content-panel.compact h2 {
-  margin-top: 0;
-}
-
-.card h3 { margin-top: 0; }
-
 .content-panel h1 {
   font-size: clamp(2rem, 4vw, 3.2rem);
   margin-top: 0;
-}
-
-.content-panel h2:first-of-type {
-  margin-top: 1.5rem;
 }
 
 .content-panel p, .content-panel li {
   color: #263226;
 }
 
-.legal-subtitle {
-  margin-top: -0.5rem;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
-
-.meta-list {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 0.35rem 1.25rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1.1rem 1.25rem;
-  background: rgba(25, 34, 25, 0.04);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-}
-
-.meta-list dt {
-  font-weight: 700;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.meta-list dd {
-  margin: 0;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2rem;
-}
-
-.contact-card {
-  background: rgba(25, 34, 25, 0.03);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1.1rem 1.2rem;
-}
-
-.contact-card h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-.contact-card p {
-  margin: 0 0 0.5rem;
-}
-
-.contact-card p:last-child {
-  margin-bottom: 0;
-  font-weight: 600;
-}
-
 .faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .faq-item {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(25, 34, 25, 0.03);
-  padding: 0.85rem 1rem;
+  border: none;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+  padding: 1rem 0;
 }
 
 .faq-item summary {
@@ -308,8 +311,13 @@ h3 {
   content: "−";
 }
 
+.faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
 .faq-item p {
   margin: 0.75rem 0 0;
+  color: var(--muted);
 }
 
 .site-footer {
@@ -349,22 +357,28 @@ h3 {
     justify-content: flex-start;
   }
 
+  main.home,
+  main.page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
   .hero,
   .home .hero {
     padding-top: 2rem;
     padding-bottom: 2.25rem;
   }
 
+  .page-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-section + .page-section {
+    padding-top: 1.5rem;
+  }
+
   .gameplay {
     padding: 2rem 0;
-  }
-
-  .meta-list {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
-  }
-
-  .meta-list dt:not(:first-child) {
-    margin-top: 0.65rem;
   }
 }
