@@ -1,4 +1,4 @@
-/* Golfer's Pair-A-Dice static launch site */
+/* Golfer's Pair-A-Dice static site */
 :root {
   --bg: #f7f4eb;
   --panel: #fffaf0;
@@ -73,7 +73,7 @@ main {
 }
 
 .hero {
-  padding: 4rem 0 3rem;
+  padding: 4rem 0 2.5rem;
   max-width: 760px;
 }
 
@@ -110,6 +110,30 @@ h3 {
   max-width: 720px;
 }
 
+.badge-row {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+}
+
+.badge.subtle {
+  background: rgba(33, 107, 58, 0.1);
+  color: var(--accent-dark);
+  border: 1px solid rgba(33, 107, 58, 0.25);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -125,7 +149,25 @@ h3 {
   box-shadow: 0 12px 32px rgba(25, 34, 25, 0.06);
 }
 
+.content-panel + .content-panel {
+  margin-top: 1.25rem;
+}
+
+.content-panel.compact h2 {
+  margin-top: 0;
+}
+
 .card h3 { margin-top: 0; }
+
+.feature-list {
+  margin: 1.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.45rem;
+  color: #263226;
+}
 
 .actions {
   display: flex;
@@ -155,21 +197,114 @@ h3 {
   padding: 1rem 1.1rem;
   background: rgba(215, 163, 50, 0.11);
   border-radius: 14px;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .content-panel h1 {
   font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-top: 0;
+}
+
+.content-panel h2:first-of-type {
+  margin-top: 1.5rem;
 }
 
 .content-panel p, .content-panel li {
   color: #263226;
 }
 
-code {
-  background: rgba(25, 34, 25, 0.08);
-  padding: 0.1rem 0.25rem;
-  border-radius: 6px;
+.legal-subtitle {
+  margin-top: -0.5rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.meta-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1.25rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 1.25rem;
+  background: rgba(25, 34, 25, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.meta-list dt {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.meta-list dd {
+  margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.contact-card {
+  background: rgba(25, 34, 25, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+}
+
+.contact-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  margin: 0 0 0.5rem;
+}
+
+.contact-card p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(25, 34, 25, 0.03);
+  padding: 0.85rem 1rem;
+}
+
+.faq-item summary {
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin: 0.75rem 0 0;
 }
 
 .site-footer {
@@ -211,5 +346,14 @@ code {
 
   .hero {
     padding-top: 2.5rem;
+  }
+
+  .meta-list {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .meta-list dt:not(:first-child) {
+    margin-top: 0.65rem;
   }
 }
