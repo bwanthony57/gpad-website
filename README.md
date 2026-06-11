@@ -11,9 +11,9 @@ This folder contains a simple static website for:
 
 The pages still include launch/legal placeholders:
 
-- BAGPIPER, LLC formation/legal details pending final confirmation
-- Effective date: [Month Day, 2026]
-- Business mailing address pending
+- Effective date: To be finalized before launch
+- Public business mailing address: [public business mailing address — to be published before launch]
+- Public business support email (support page): [public support email — to be published before launch]
 - Monetization providers still described as planned/recommended where applicable
 
 Do not use these as final public App Store legal pages until those placeholders are resolved.
@@ -41,4 +41,4 @@ For easiest app-development workflow, create a new GitHub repo named something l
 
 After choosing hosting, update Porkbun DNS for `golferspairadice.com` based on the hosting provider's instructions.
 
-Do not change DNS until the site is hosted and the LLC/legal details are ready or you are comfortable publishing a draft/pre-launch site.
+Do not change DNS until the site is hosted and remaining launch placeholders are resolved or you are comfortable publishing a draft/pre-launch site.
