@@ -11,12 +11,16 @@ This folder contains a simple static website for:
 
 The pages still include launch/legal placeholders:
 
-- BAGPIPER, LLC formation/legal details pending final confirmation
-- Effective date: [Month Day, 2026]
-- Business mailing address pending
+- Effective date: To be finalized before launch
 - Monetization providers still described as planned/recommended where applicable
 
-Do not use these as final public App Store legal pages until those placeholders are resolved.
+Confirmed public contact details (published on site):
+
+- Publisher: BAGPIPER, LLC
+- Public mailing address: 3000 S Hulen Street, STE 124 #254, Fort Worth, Texas 76109, United States
+- Public support email: support@golferspairadice.com
+
+Do not use these as final public App Store legal pages until the effective date placeholder is resolved.
 
 ## Recommended hosting
 
@@ -41,4 +45,4 @@ For easiest app-development workflow, create a new GitHub repo named something l
 
 After choosing hosting, update Porkbun DNS for `golferspairadice.com` based on the hosting provider's instructions.
 
-Do not change DNS until the site is hosted and the LLC/legal details are ready or you are comfortable publishing a draft/pre-launch site.
+Do not change DNS until the site is hosted and remaining launch placeholders are resolved or you are comfortable publishing a draft/pre-launch site.
