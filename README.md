@@ -12,11 +12,15 @@ This folder contains a simple static website for:
 The pages still include launch/legal placeholders:
 
 - Effective date: To be finalized before launch
-- Public business mailing address: [public business mailing address — to be published before launch]
-- Public business support email (support page): [public support email — to be published before launch]
 - Monetization providers still described as planned/recommended where applicable
 
-Do not use these as final public App Store legal pages until those placeholders are resolved.
+Confirmed public contact details (published on site):
+
+- Publisher: BAGPIPER, LLC
+- Public mailing address: 3000 S Hulen Street, STE 124 #254, Fort Worth, Texas 76109, United States
+- Public support email: support@golferspairadice.com
+
+Do not use these as final public App Store legal pages until the effective date placeholder is resolved.
 
 ## Recommended hosting
 
