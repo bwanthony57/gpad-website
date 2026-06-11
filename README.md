@@ -19,6 +19,7 @@ Confirmed public contact details (published on site):
 - Publisher: BAGPIPER, LLC
 - Public mailing address: 3000 S Hulen Street, STE 124 #254, Fort Worth, Texas 76109, United States
 - Public support email: support@golferspairadice.com
+- Business inquiries email: brooks.anthony@bagpipergames.com
 
 Do not use these as final public App Store legal pages until the effective date placeholder is resolved.
 
