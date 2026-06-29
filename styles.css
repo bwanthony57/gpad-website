@@ -266,8 +266,20 @@ main.page {
 }
 
 .store-section {
-  padding: 0 0 2.5rem;
-  border-bottom: 1px solid var(--line);
+  padding: 0 0 1.5rem;
+}
+
+.home-note .store-section {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.home-note .callout {
+  margin-bottom: 1.75rem;
+}
+
+.home-note .page-links {
+  margin-top: 0.25rem;
 }
 
 .store-soon-label {
