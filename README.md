@@ -46,3 +46,19 @@ For easiest app-development workflow, create a new GitHub repo named something l
 After choosing hosting, update Porkbun DNS for `golferspairadice.com` based on the hosting provider's instructions.
 
 Do not change DNS until the site is hosted and remaining launch placeholders are resolved or you are comfortable publishing a draft/pre-launch site.
+
+## Agent skills (Cursor)
+
+This repo includes project-level Cursor agent skills for design and frontend quality. Skills are installed under `.agents/skills/` (see `skills-lock.json` for versions).
+
+Main slash commands:
+
+| Skill | Commands |
+|-------|----------|
+| Ponytail | `/ponytail`, `/ponytail-review`, `/ponytail-audit` |
+| Taste | `/design-taste-frontend` |
+| Emil Kowalski | `/emil-design-eng`, `/review-animations` |
+| Impeccable | `/impeccable audit`, `/impeccable polish`, `/impeccable critique` |
+| Vercel | `/web-design-guidelines` |
+
+To refresh skills after lockfile changes, use the `npx skills add …` commands documented in the repo history or on [skills.sh](https://skills.sh).
