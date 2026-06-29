@@ -41,7 +41,10 @@ Other static hosts also work if you ever migrate:
 - `terms/index.html` — Terms of Use / EULA
 - `support/index.html` — Support page
 - `styles.css` — shared styles
+- `site-chrome.js` — shared skip link, header, footer (from `data-page` on `<body>`)
 - `404.html` — fallback page
+- `robots.txt` — crawler rules
+- `sitemap.xml` — public URL list for search engines
 - `assets/` — site icon (candidate D): SVG favicon, 180px touch icon, 1024px social preview
 - `CNAME` — custom domain for GitHub Pages (`golferspairadice.com`)
 
