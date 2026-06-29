@@ -18,11 +18,12 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/">Golfer's Pair-A-Dice</a>
       <div class="nav-links">
-        <a href="/">Home</a>
+        <a href="/" aria-current="page">Home</a>
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
@@ -30,16 +31,19 @@
     </nav>
   </header>
 
-  <main class="home">
-    <section class="hero">
-      <h1>Golfer's Pair-A-Dice</h1>
+  <main class="home" id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-mark">
+        <img src="/assets/gpad-icon-180.png" alt="" width="180" height="180" decoding="async">
+      </div>
+      <h1 id="hero-title">Golfer's Pair-A-Dice</h1>
       <p class="hero-intro">A dice-powered golf strategy game for mobile.</p>
       <p class="hero-tagline">Roll the dice. Hit the shots. Chase the championship.</p>
     </section>
 
     <section class="gameplay">
-      <p>Play through a fictional golf career where every hole mixes course management, luck, and risk-reward decisions. Sign in and use Account Settings to back up and restore progress across devices.</p>
-      <p>The app may include optional rewarded ads, optional Pro Shop purchases for coins and items, and a one-time Remove Forced Ads purchase that removes eligible forced Practice round break ads. Optional rewarded ads remain available because they are user-initiated.</p>
+      <p>Play through a fictional golf career where every hole mixes course management, luck, and risk-reward decisions.</p>
+      <p>The app may include optional rewarded ads, optional Pro Shop purchases for coins and items, and a one-time Remove Forced Ads purchase that removes eligible forced Practice round break ads. Optional rewarded ads remain available because they are user-initiated. Sign in and use Account Settings to back up and restore progress across devices.</p>
     </section>
 
     <section class="home-note">

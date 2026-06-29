@@ -59,6 +59,15 @@ git push origin main
 
 GitHub Pages deploys from `main` automatically. DNS for `golferspairadice.com` is managed in Porkbun.
 
+### Local preview
+
+```bash
+cd C:\Users\bwant\gpad_website
+python -m http.server 8080
+```
+
+Open http://localhost:8080/ — use this before pushing changes to GitHub.
+
 ## Agent skills (Cursor)
 
 This repo includes project-level Cursor agent skills for design and frontend quality. Skills are installed under `.agents/skills/` (see `skills-lock.json` for versions).
