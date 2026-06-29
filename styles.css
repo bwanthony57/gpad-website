@@ -1,0 +1,384 @@
+/* Golfer's Pair-A-Dice static site */
+:root {
+  --bg: #f7f4eb;
+  --panel: #fffaf0;
+  --ink: #192219;
+  --muted: #536153;
+  --line: #d8cfbd;
+  --accent: #216b3a;
+  --accent-dark: #174f2a;
+  --gold: #d7a332;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(215, 163, 50, 0.16), transparent 34rem),
+    linear-gradient(180deg, #fbf8ef 0%, var(--bg) 100%);
+}
+
+a { color: var(--accent-dark); }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.92);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 800;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover { color: var(--accent-dark); }
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+main.home,
+main.page {
+  max-width: 42rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.page-header {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 0.65rem;
+  letter-spacing: -0.03em;
+}
+
+.page-subtitle,
+.page-intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.doc-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.doc-meta li {
+  margin-bottom: 0.45rem;
+}
+
+.doc-meta .label {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.doc-meta .label::after {
+  content: ":";
+  margin-right: 0.35rem;
+}
+
+.doc-body h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 2.25rem 0 0.65rem;
+  letter-spacing: -0.01em;
+}
+
+.doc-body p,
+.doc-body li {
+  color: #263226;
+}
+
+.page-section {
+  padding-bottom: 2rem;
+}
+
+.page-section + .page-section {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+
+.page-section h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.page-section p,
+.page-section li {
+  color: #263226;
+}
+
+.page-section .page-links {
+  margin-top: 1.25rem;
+}
+
+.hero {
+  padding: 3rem 0 1.5rem;
+  max-width: 640px;
+}
+
+.home .hero {
+  padding: 2.5rem 0 3rem;
+  border-bottom: 1px solid var(--line);
+  max-width: none;
+}
+
+.home .hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  margin: 0 0 1.1rem;
+  letter-spacing: -0.04em;
+}
+
+.hero-intro {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+  line-height: 1.5;
+}
+
+.hero-tagline {
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.gameplay {
+  padding: 2.5rem 0;
+}
+
+.gameplay p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #263226;
+  line-height: 1.65;
+}
+
+.home-note {
+  padding-top: 0.5rem;
+}
+
+.callout {
+  margin: 0 0 2rem;
+  padding: 0.9rem 0 0.9rem 1rem;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 640px;
+}
+
+.page-links {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.page-links a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-links a:hover {
+  text-decoration: underline;
+}
+
+.page-links .sep {
+  color: var(--line);
+  margin: 0 0.55rem;
+}
+
+.content-panel {
+  background: rgba(255, 250, 240, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 32px rgba(25, 34, 25, 0.06);
+}
+
+.content-panel h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-top: 0;
+}
+
+.content-panel p, .content-panel li {
+  color: #263226;
+}
+
+.faq-list {
+  margin-top: 0.5rem;
+}
+
+.faq-item {
+  border: none;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+  padding: 1rem 0;
+}
+
+.faq-item summary {
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 1.25rem;
+  color: var(--muted);
+  background: rgba(255, 250, 240, 0.75);
+}
+
+.footer-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+
+  main.home,
+  main.page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero,
+  .home .hero {
+    padding-top: 2rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .page-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-section + .page-section {
+    padding-top: 1.5rem;
+  }
+
+  .gameplay {
+    padding: 2rem 0;
+  }
+}
