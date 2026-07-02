@@ -71,6 +71,10 @@ python -m http.server 8080
 
 Open http://localhost:8080/ — use this before pushing changes to GitHub.
 
+### Design preview (local only)
+
+An optional experimental layout may live in `preview/` (gitignored — not pushed or deployed). The live site is always `/`.
+
 ## Agent skills (Cursor)
 
 This repo includes project-level Cursor agent skills for design and frontend quality. Skills are installed under `.agents/skills/` (see `skills-lock.json` for versions).

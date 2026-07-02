@@ -30,8 +30,10 @@
 
   var header =
     '<header class="site-header">' +
+    '<a class="brand" href="/" aria-label="Golfer\'s Pair-A-Dice home">' +
+    '<img class="brand-logo" src="/_brand-kit/golfers-pair-a-dice/02_lockup/svg/lockup_cream.svg" alt="Golfer\'s Pair-A-Dice" width="1467" height="350">' +
+    '</a>' +
     '<nav class="nav" aria-label="Main navigation">' +
-    '<a class="brand" href="/">Golfer\'s Pair-A-Dice</a>' +
     '<div class="nav-links">' +
     navLinksHtml() +
     '</div></nav></header>';

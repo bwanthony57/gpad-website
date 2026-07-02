@@ -60,8 +60,7 @@ summary:focus:not(:focus-visible) {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 250, 240, 0.92);
-  backdrop-filter: blur(8px);
+  background: #f7f0df;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -69,26 +68,34 @@ summary:focus:not(:focus-visible) {
 
 .nav {
   max-width: 980px;
-  margin: 0 auto;
-  padding: 0.85rem 1.25rem;
+  margin: -0.75rem auto 0;
+  padding: 0 1.25rem 0.85rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
 }
 
 .brand {
-  font-weight: 800;
-  color: var(--ink);
-  text-decoration: none;
-  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 0;
+  padding: 0.6rem 1.25rem 0;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  max-width: 42rem;
+  height: auto;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav-links a {
@@ -212,9 +219,15 @@ main.page {
 }
 
 .home .hero {
-  padding: 2.5rem 0 3rem;
+  padding: 0 0 3rem;
   border-bottom: 1px solid var(--line);
   max-width: none;
+  text-align: center;
+}
+
+.home .hero .hero-mark {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-mark {
@@ -235,6 +248,17 @@ main.page {
   line-height: 1.05;
   margin: 0 0 1.1rem;
   letter-spacing: -0.04em;
+}
+
+.home .hero .hero-wordmark {
+  max-width: clamp(18rem, 58vw, 36rem);
+  margin: 0 auto 1.1rem;
+}
+
+.hero-wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-intro {
@@ -267,6 +291,7 @@ main.page {
 
 .store-section {
   padding: 0 0 1.5rem;
+  text-align: center;
 }
 
 .home-note .store-section {
@@ -276,10 +301,6 @@ main.page {
 
 .home-note .callout {
   margin-bottom: 1.75rem;
-}
-
-.home-note .page-links {
-  margin-top: 0.25rem;
 }
 
 .store-soon-label {
@@ -294,6 +315,7 @@ main.page {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  justify-content: center;
 }
 
 .store-badge--placeholder {
@@ -379,11 +401,13 @@ main.page {
 
 .callout {
   margin: 0 0 2rem;
-  padding: 0.9rem 0 0.9rem 1rem;
+  padding: 0.9rem 1rem;
   border-left: 3px solid var(--line);
+  border-right: 3px solid var(--line);
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.55;
+  text-align: center;
 }
 
 h1 {
@@ -539,13 +563,8 @@ main.page .content-panel {
 }
 
 @media (max-width: 640px) {
-  .nav {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
   .nav-links {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   main.home,
@@ -556,7 +575,7 @@ main.page .content-panel {
 
   .hero,
   .home .hero {
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 2.25rem;
   }
 
