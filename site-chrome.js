@@ -46,6 +46,7 @@
     '<a href="mailto:support@golferspairadice.com">support@golferspairadice.com</a>' +
     '<a href="/privacy">Privacy</a>' +
     '<a href="/terms">Terms</a>' +
+    '<a href="https://bagpipergames.com" rel="noopener noreferrer">Bagpiper Games</a>' +
     '</div></div></footer>';
 
   document.body.insertAdjacentHTML('afterbegin', skipLink + header);
