@@ -2,9 +2,9 @@
   var page = document.body.getAttribute('data-page') || '';
   var navItems = [
     { id: 'home', href: '/', label: 'Home' },
-    { id: 'support', href: '/support', label: 'Support' },
-    { id: 'privacy', href: '/privacy', label: 'Privacy' },
-    { id: 'terms', href: '/terms', label: 'Terms' },
+    { id: 'support', href: '/support/', label: 'Support' },
+    { id: 'privacy', href: '/privacy/', label: 'Privacy' },
+    { id: 'terms', href: '/terms/', label: 'Terms' },
   ];
 
   function navLinksHtml() {
@@ -44,8 +44,8 @@
     '<div>© 2026 BAGPIPER, LLC. All rights reserved.</div>' +
     '<div class="footer-links">' +
     '<a href="mailto:support@golferspairadice.com">support@golferspairadice.com</a>' +
-    '<a href="/privacy">Privacy</a>' +
-    '<a href="/terms">Terms</a>' +
+    '<a href="/privacy/">Privacy</a>' +
+    '<a href="/terms/">Terms</a>' +
     '<a href="https://bagpipergames.com" rel="noopener noreferrer">Bagpiper Games</a>' +
     '</div></div></footer>';
 
