@@ -7,22 +7,18 @@ This folder contains a simple static website for:
 - https://golferspairadice.com/terms
 - https://golferspairadice.com/support
 
-## Important before publishing
+## Launch / legal status
 
-The pages still include launch/legal placeholders:
+- **Effective date:** August 1, 2026 (Privacy Policy and Terms of Use)
+- Lawyer review of Privacy Policy and Terms of Use has not been completed (publisher decision; not a site-copy placeholder)
 
-- Effective date: To be finalized before launch
-- Lawyer review of Privacy Policy and Terms of Use has not been completed
-
-Launch feature set reflected in site copy (accounts via email magic link, manual cloud backup through Supabase, RevenueCat, Google AdMob). Sign in with Apple and Google may be added in a future app update.
+Launch feature set reflected in site copy (accounts via email magic link, manual cloud backup through Supabase, RevenueCat, Google AdMob, Android UMP consent where required, iOS App Tracking Transparency where required). Sign in with Apple and Google may be added in a future app update. App Store / Google Play badge links on the home page remain "Coming soon" until store URLs are final.
 
 Confirmed public contact details (published on site):
 
 - Publisher: BAGPIPER, LLC
 - Public mailing address: 3000 S Hulen Street, STE 124 #254, Fort Worth, Texas 76109, United States
 - Public support email: support@golferspairadice.com
-
-Do not use these as final public App Store legal pages until the effective date placeholder is resolved.
 
 ## Hosting
 
