@@ -318,14 +318,21 @@ main.page {
   justify-content: center;
 }
 
-.store-badge--placeholder {
+.store-badge {
   display: flex;
   align-items: center;
   gap: 0.65rem;
   min-width: 11.5rem;
   padding: 0.55rem 0.85rem;
-  border: 1px dashed var(--line);
+  border: 1px solid var(--line);
   border-radius: 12px;
+  background: rgba(255, 250, 240, 0.9);
+  color: inherit;
+  text-decoration: none;
+}
+
+.store-badge--placeholder {
+  border-style: dashed;
   background: rgba(255, 250, 240, 0.65);
   color: var(--muted);
 }
@@ -596,7 +603,7 @@ main.page .content-panel {
     padding-bottom: 2rem;
   }
 
-  .store-badge--placeholder {
+  .store-badge {
     min-width: 100%;
   }
 }
