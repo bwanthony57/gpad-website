@@ -16,7 +16,7 @@ brand
 
 This repository is the **static public website** for [golferspairadice.com](https://golferspairadice.com/) — not the mobile app UI. It exists to:
 
-1. **Introduce the game** with a concise landing message (dice-powered golf strategy, mobile launch).
+1. **Introduce the game** with a concise landing message (dice-powered golf strategy, available on iOS and Android).
 2. **Publish legal and policy pages** required for app store compliance (Privacy Policy, Terms of Use / EULA).
 3. **Provide player support** (contact email, FAQ on purchases, ads, progress, refunds).
 4. **Establish trust** with explicit statements that the game is entertainment-only — no real-money gambling, betting, cash prizes, or redeemable rewards.

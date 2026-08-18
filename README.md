@@ -1,4 +1,4 @@
-# Golfer's Pair-A-Dice Static Website Draft
+# Golfer's Pair-A-Dice Static Website
 
 This folder contains a simple static website for:
 
@@ -12,7 +12,7 @@ This folder contains a simple static website for:
 - **Effective date:** August 1, 2026 (Privacy Policy and Terms of Use)
 - Lawyer review of Privacy Policy and Terms of Use has not been completed (publisher decision; not a site-copy placeholder)
 
-Launch feature set reflected in site copy (accounts via email magic link, manual cloud backup through Supabase, RevenueCat, Google AdMob, Android UMP consent where required, iOS App Tracking Transparency where required). Sign in with Apple and Google may be added in a future app update. App Store / Google Play badge links on the home page remain "Coming soon" until store URLs are final.
+Launch feature set reflected in site copy (accounts via email magic link, manual cloud backup through Supabase, RevenueCat, Google AdMob, Android UMP consent where required, iOS App Tracking Transparency where required). Sign in with Apple and Google may be added in a future app update. Home-page store badges link to the live iOS App Store listing (v1.0) and Google Play listing.
 
 Confirmed public contact details (published on site):
 
