@@ -565,7 +565,10 @@ main.page .content-panel {
 
 .launch-credit {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
   padding: 0 1.25rem 2rem;
 }
 
@@ -581,7 +584,6 @@ main.page .content-panel {
 
 .launch-credit img {
   display: block;
-  width: 272px;
   max-width: 100%;
   height: auto;
 }
