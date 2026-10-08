@@ -51,4 +51,9 @@
 
   document.body.insertAdjacentHTML('afterbegin', skipLink + header);
   document.body.insertAdjacentHTML('beforeend', footer);
+
+  var credit = document.querySelector('.launch-credit');
+  if (credit) {
+    document.querySelector('.site-footer').appendChild(credit);
+  }
 })();
