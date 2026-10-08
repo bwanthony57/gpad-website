@@ -578,14 +578,30 @@ main.page .content-panel {
 }
 
 .launch-credit a {
-  line-height: 0;
+  display: grid;
+  place-items: center;
+  flex: 0 1 17.5rem;
+  width: min(17.5rem, 100%);
+  height: 4.25rem;
+  padding: 0.4rem 0.75rem;
+  background: #fff;
+  border: 1px solid var(--line);
   border-radius: 12px;
+  line-height: 0;
+}
+
+.launch-credit a:hover,
+.launch-credit a:focus-visible {
+  border-color: #c4bba6;
 }
 
 .launch-credit img {
   display: block;
-  max-width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 640px) {
